@@ -30,7 +30,7 @@ const About = () => {
             <div>
               <p className="grid-headtext">Hi, I’m Agrim Pradhananga</p>
               <p className="grid-subtext">
-                With 1 year of experience, I have honed my skills in both
+                With over a year of experience, I have honed my skills in both
                 frontend and backend dev, creating dynamic and responsive
                 websites.
               </p>
@@ -87,7 +87,13 @@ const About = () => {
                 I&apos;m based in Bhaktapur, Nepal and open to remote work
                 worldwide.
               </p>
-              <Button name="Contact Me" isBeam containerClass="w-full mt-10" />
+              <a href="#contact">
+                <Button
+                  name="Contact Me"
+                  isBeam
+                  containerClass="w-full mt-10"
+                />
+              </a>
             </div>
           </div>
         </div>
