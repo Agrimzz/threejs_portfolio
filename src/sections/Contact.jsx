@@ -33,6 +33,11 @@ const Contact = () => {
       )
       alert("Message sent succesfully.")
       setLoading(false)
+      setForm({
+        name: "",
+        email: "",
+        message: "",
+      })
     } catch (error) {
       setLoading(false)
       console.log(error)
