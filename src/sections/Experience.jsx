@@ -32,7 +32,16 @@ const Experience = () => {
           <div className="work-content">
             <div className="sm:py-10 py-5 sm:px-5 px-2.5">
               {workExperiences.map(
-                ({ id, name, pos, duration, title, icon, animation }) => (
+                ({
+                  id,
+                  name,
+                  pos,
+                  duration,
+                  title,
+                  icon,
+                  animation,
+                  projects,
+                }) => (
                   <div
                     className="work-content_container group"
                     key={id}
@@ -44,7 +53,7 @@ const Experience = () => {
                   >
                     <div className="flex flex-col h-full justify-start items-center py-2">
                       <div className="work-content_logo">
-                        <img src={icon} alt="logo" className=" w-full h-full" />
+                        <img src={icon} alt="logo" className="w-full h-full" />
                       </div>
                       <div className="work-content_bar"></div>
                     </div>
@@ -53,9 +62,32 @@ const Experience = () => {
                       <p className="text-sm mb-5">
                         {pos} -- {duration}
                       </p>
-                      <p className="group-hover:text-white tranistion ease-in-out duration-500">
+                      <p className="group-hover:text-white transition ease-in-out duration-500">
                         {title}
                       </p>
+
+                      {projects && (
+                        <div className="mt-2 ml-4">
+                          <ul className="list-disc list-inside">
+                            {projects.map((project, index) => (
+                              <li
+                                key={index}
+                                className="text-sm text-white-600 mt-2"
+                              >
+                                <a
+                                  href={project.link}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="text-blue-500 hover:underline"
+                                >
+                                  {project.name}
+                                </a>
+                                : {project.description}
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      )}
                     </div>
                   </div>
                 )

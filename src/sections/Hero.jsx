@@ -64,7 +64,7 @@ const Hero = () => {
           Hi, I am Agrim <span className="waving-hand">👋</span>
         </p>
         <p className="hero_tag text-gray_gradient">
-          Building Products and Brands
+          Crafting Apps and Websites That Inspire
         </p>
         <div className="w-full h-full absolute inset-0">
           {/* <Leva /> */}

@@ -304,7 +304,22 @@ export const workExperiences = [
       "Freelance front-end developer specializing in building responsive, user-friendly web and mobile apps using React, Next.js, and Tailwind CSS.",
     icon: "/assets/react.svg",
     animation: "victory",
+    projects: [
+      {
+        name: "FrodNepal",
+        description:
+          "Developed dynamic vehicle category navigation for ford.com.np, improving user experience by enabling real-time updates based on available categories.",
+        link: "https://ford.com.np",
+      },
+      {
+        name: "Manabiya Nepal",
+        description:
+          "Built the official website for Manabiya Nepal, a Japanese language institute, with a focus on responsive design, mobile compatibility, and fast loading times.",
+        link: "https://manabiyanepal.com.np",
+      },
+    ],
   },
+
   // {
   //   id: 2,
   //   name: "Figma",
