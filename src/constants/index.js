@@ -306,7 +306,7 @@ export const workExperiences = [
     animation: "victory",
     projects: [
       {
-        name: "FrodNepal",
+        name: "Ford Nepal",
         description:
           "Developed dynamic vehicle category navigation for ford.com.np, improving user experience by enabling real-time updates based on available categories.",
         link: "https://ford.com.np",
