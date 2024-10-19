@@ -1,8 +1,9 @@
 "use client"
 import { useState } from "react"
-import Globe from "react-globe.gl"
-
+import dynamic from "next/dynamic.js"
 import Button from "../components/Button.jsx"
+
+const Globe = dynamic(() => import("react-globe.gl"), { ssr: false })
 
 const About = () => {
   const [hasCopied, setHasCopied] = useState(false)
@@ -81,7 +82,7 @@ const About = () => {
             </div>
             <div>
               <p className="grid-headtext">
-                I’m very flexible with time zone communications & locations
+                I{"'"}m very flexible with time zone communications & locations
               </p>
               <p className="grid-subtext">
                 I&apos;m based in Bhaktapur, Nepal and open to remote work
