@@ -61,7 +61,7 @@ export const myProjects = [
     title: "Terminal Protfolio",
     desc: "Terminal Portfolio is a unique, interactive showcase that lets users explore my work in a terminal-style interface. Mimicking a command-line environment, it allows for easy navigation through projects, skills, and experiences, offering a retro yet modern twist on traditional portfolios. The clean and minimal design enhances user engagement, making it a memorable way to present my professional journey",
     subdesc:
-      "Built with Next.js 14 and Typescript ensures a smooth and secure banking experience, tailored to meet the needs of modern consumers.",
+      "Built with Next.js 14 and TypeScript, this project emphasizes performance, scalability, and modern web development practices, offering a seamless, interactive experience for users.",
     href: "https://terminal-portfolio-wheat.vercel.app",
     texture: "/textures/project/project2.mp4",
     logo: "/assets/project-logo4.png",
