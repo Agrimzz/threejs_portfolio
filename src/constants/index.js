@@ -19,7 +19,7 @@ export const navLinks = [
     name: "Contact",
     href: "#contact",
   },
-]
+];
 
 export const clientReviews = [
   {
@@ -54,7 +54,7 @@ export const clientReviews = [
     review:
       "Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend backend dev are top-notch.",
   },
-]
+];
 
 export const myProjects = [
   {
@@ -63,7 +63,7 @@ export const myProjects = [
     subdesc:
       "Built with Next.js 14 and TypeScript, this project emphasizes performance, scalability, and modern web development practices, offering a seamless, interactive experience for users.",
     href: "https://terminal-portfolio-wheat.vercel.app",
-    texture: "/textures/project/project2.mp4",
+    texture: "/textures/project/terminal.mp4",
     logo: "/assets/project-logo4.png",
     logoStyle: {
       backgroundColor: "#0E1F38",
@@ -86,93 +86,125 @@ export const myProjects = [
     ],
   },
   {
-    title: "SocialSphere",
-    desc: "Social Sphere is an innovative platform designed for creating and participating in discussions across various topics, much like Reddit. Users can post, comment, and engage in community-driven content, fostering interaction and idea-sharing.",
+    title: "Eventsage",
+    desc: "EventSage is a Next.js web application that enables event organizers to upload and manage events, while providing users with an intuitive interface to discover, explore via interactive maps, and purchase tickets to their favorite happenings.",
     subdesc:
-      "Developed with ReactJs,  SCSS, php, and MySql, SocialSphere ensures a seamless, scalable experience with a focus on performance and usability.",
-    href: "https://github.com/Agrimzz/SocialSphere",
-    texture: "/textures/project/project1.mp4",
-    logo: "/assets/project-logo1.png",
+      "Built with Next.js and MongoDB, integrated with leaflet API for geolocation features, and powered by a custom content‑based filtering recommendation engine to suggest events tailored to each user’s interests and past interactions.",
+    href: "https://github.com/Agrimzz/eventsage/tree/main",
+    texture: "/textures/project/eventsage.mp4",
+    logo: "/assets/eventsage.png",
     logoStyle: {
-      backgroundColor: "rgba(72,69,158,0.4)",
-      border: "0.2px solid #545299",
-      boxShadow: "0px 0px 60px 0px #AA3C304D",
+      backgroundColor: "rgba(0, 103, 232, 0.4)",
+      border: "0.2px solid #0067E8",
+      boxShadow: "0px 0px 60px 0px #0451B2",
+    },
+    spotlight: "/assets/spotlight4.png",
+    tags: [
+      {
+        id: 1,
+        name: "Next.js",
+        path: "/assets/next.png",
+      },
+      {
+        id: 2,
+        name: "TypeScript",
+        path: "/assets/typescript.png",
+      },
+      {
+        id: 3,
+        name: "MongoDB",
+        path: "/assets/mongo.png",
+      },
+    ],
+  },
+  {
+    title: "JobPortal",
+    desc: "JobPortal is a full‑stack recruitment platform where companies can post job openings and candidates can browse, filter, and submit applications directly through the site’s user‑friendly dashboard.",
+    subdesc:
+      "Developed with Next.js and MongoDB, featuring secure authentication, role‑based access control for recruiters and applicants, and real‑time form validation to streamline the hiring process.",
+    href: "https://jobportal-mu-two.vercel.app/",
+    texture: "/textures/project/job.mp4",
+    logo: "/assets/jobportal.png",
+    logoStyle: {
+      backgroundColor: "rgba(2, 158, 47, 0.4)",
+      border: "0.2px solid #029E2F",
+      boxShadow: "0px 0px 60px 0px #086924",
+    },
+    spotlight: "/assets/spotlight3.png",
+    tags: [
+      {
+        id: 1,
+        name: "Next.js",
+        path: "/assets/next.png",
+      },
+      {
+        id: 2,
+        name: "TypeScript",
+        path: "/assets/typescript.png",
+      },
+      {
+        id: 3,
+        name: "MongoDB",
+        path: "/assets/mongo.png",
+      },
+    ],
+  },
+  {
+    title: " Kanban Board",
+    desc: "Kanban Board is a task management tool that lets users organize to‑dos into customizable columns, drag and drop tasks between stages, and quickly search or filter items to maintain a clear project overview.",
+    subdesc:
+      "Built with React, TypeScript, dnd‑kit for smooth drag‑and‑drop interactions, and styled with Tailwind CSS for a responsive, modern UI that adapts seamlessly across devices.",
+    href: "https://kanban-board-ws37.vercel.app/",
+    texture: "/textures/project/kanban.mp4",
+    logo: "/assets/kanban.png",
+    logoStyle: {
+      backgroundColor: "rgba(27, 116, 105, 0.4)",
+      border: "0.2px solid #1B7469",
+      boxShadow: "0px 0px 60px 0px #0C5D53",
+    },
+    spotlight: "/assets/spotlight3.png",
+    tags: [
+      {
+        id: 1,
+        name: "React.js",
+        path: "/assets/react.svg",
+      },
+      {
+        id: 2,
+        name: "Tailwind",
+        path: "assets/tailwindcss.png",
+      },
+    ],
+  },
+  {
+    title: "YC Directory",
+    desc: "YC Directory is a startup pitch platform where founders can submit brief project descriptions and investors can browse, search, and bookmark promising ventures in a clean, card‑based interface.",
+    subdesc:
+      "Implemented using Next.js, Tailwind CSS, and Sanity.io as a headless CMS for dynamic content management, enabling easy updates, SEO‑friendly pages, and fast static generation for optimal performance.",
+    href: "https://yc-directory-ten.vercel.app/",
+    texture: "/textures/project/yc.mp4",
+    logo: "/assets/yc.png",
+    logoStyle: {
+      backgroundColor: "rgba(238, 43, 105, 0.3)",
+      border: "0.2px solid #EE2B69",
+      boxShadow: "0px 0px 60px 0px #AD0B3E",
     },
     spotlight: "/assets/spotlight1.png",
     tags: [
       {
         id: 1,
-        name: "React.js",
-        path: "/assets/react.svg",
+        name: "Next.js",
+        path: "/assets/next.png",
       },
       {
         id: 2,
-        name: "CSS",
-        path: "assets/css.png",
+        name: "TypeScript",
+        path: "/assets/typescript.png",
       },
       {
         id: 3,
-        name: "php",
-        path: "/assets/php.png",
-      },
-      {
-        id: 4,
-        name: "MySql",
-        path: "/assets/mysql.png",
-      },
-    ],
-  },
-  {
-    title: "MovieInfo",
-    desc: "MovieInfo is a dynamic platform that provides detailed information on movies. Powered by the TMDB API, it allows users to search for and explore a vast collection of films, making it easy to stay updated on the latest releases and all-time favorites",
-    subdesc:
-      "Built using React and CSS, MovieInfo offers a sleek, responsive design and smooth user experience. With seamless integration of the TMDB API, it ensures fast and accurate movie data retrieval, making it a reliable go-to for movie enthusiasts.",
-    href: "https://movieinfoasd.netlify.app/?",
-    texture: "/textures/project/project3.mp4",
-    logo: "/assets/project-logo2.png",
-    logoStyle: {
-      backgroundColor: "#13202F",
-      border: "0.2px solid #17293E",
-      boxShadow: "0px 0px 60px 0px #2F6DB54D",
-    },
-    spotlight: "/assets/spotlight2.png",
-    tags: [
-      {
-        id: 1,
-        name: "React.js",
-        path: "/assets/react.svg",
-      },
-      {
-        id: 2,
-        name: "CSS",
-        path: "assets/css.png",
-      },
-    ],
-  },
-  {
-    title: "Gizmos",
-    desc: "Gizmos is a sleek e-commerce web app tailored for gaming headphone enthusiasts. It offers a curated selection of high-quality gaming headphones with detailed product descriptions and seamless shopping experience. ",
-    subdesc:
-      "Powered by Next.js for optimal performance and MongoDB for efficient data management, Gizmos delivers a fast, responsive user experience. With its modern design and focus on gaming headphones, the app is built to scale, ensuring users can browse, compare, and shop effortlessly, all while maintaining data security and reliability.",
-    href: "https://github.com/Agrimzz/gizmos",
-    texture: "/textures/project/project4.mp4",
-    logo: "/assets/project-logo5.png",
-    logoStyle: {
-      backgroundColor: "#13202F",
-      border: "0.2px solid #17293E",
-      boxShadow: "0px 0px 60px 0px #2F6DB54D",
-    },
-    spotlight: "/assets/spotlight5.png",
-    tags: [
-      {
-        id: 1,
-        name: "React.js",
-        path: "/assets/react.svg",
-      },
-      {
-        id: 2,
-        name: "MongoDB",
-        path: "assets/mongo.png",
+        name: "TailwindCSS",
+        path: "/assets/tailwindcss.png",
       },
     ],
   },
@@ -253,7 +285,7 @@ export const myProjects = [
   //     },
   //   ],
   // },
-]
+];
 
 export const calculateSizes = (isSmall, isMobile, isTablet) => {
   return {
@@ -291,8 +323,8 @@ export const calculateSizes = (isSmall, isMobile, isTablet) => {
       : isTablet
       ? [-14, -15, -10]
       : [-12, -10, -3],
-  }
-}
+  };
+};
 
 export const workExperiences = [
   {
@@ -317,6 +349,12 @@ export const workExperiences = [
           "Built the official website for Manabiya Nepal, a Japanese language institute, with a focus on responsive design, mobile compatibility, and fast loading times.",
         link: "https://manabiyanepal.com.np",
       },
+      {
+        name: "Kathmandu Cricket Academy",
+        description:
+          "Built the official website for Kathmandu Cricket Academy, a cricket academy to foster the talents of future cricket stars of Nepal.",
+        link: "https://kathmanducricketacademy.com.np",
+      },
     ],
   },
 
@@ -340,4 +378,4 @@ export const workExperiences = [
   //   icon: "/assets/notion.svg",
   //   animation: "salute",
   // },
-]
+];
