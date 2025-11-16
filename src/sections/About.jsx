@@ -1,21 +1,21 @@
-"use client"
-import { useState } from "react"
-import dynamic from "next/dynamic.js"
-import Button from "../components/Button.jsx"
+"use client";
+import { useState } from "react";
+import dynamic from "next/dynamic.js";
+import Button from "../components/Button.jsx";
 
-const Globe = dynamic(() => import("react-globe.gl"), { ssr: false })
+const Globe = dynamic(() => import("react-globe.gl"), { ssr: false });
 
 const About = () => {
-  const [hasCopied, setHasCopied] = useState(false)
+  const [hasCopied, setHasCopied] = useState(false);
 
   const handleCopy = () => {
-    navigator.clipboard.writeText("agrimp91@gmail.com")
-    setHasCopied(true)
+    navigator.clipboard.writeText("agrimp91@gmail.com");
+    setHasCopied(true);
 
     setTimeout(() => {
-      setHasCopied(false)
-    }, 2000)
-  }
+      setHasCopied(false);
+    }, 2000);
+  };
 
   return (
     <section className="c-space my-20" id="about">
@@ -31,7 +31,7 @@ const About = () => {
             <div>
               <p className="grid-headtext">Hi, I’m Agrim Pradhananga</p>
               <p className="grid-subtext">
-                With over a year of experience, I have honed my skills in both
+                With years of experience, I have honed my skills in both
                 frontend and backend dev, creating dynamic and responsive
                 websites.
               </p>
@@ -142,7 +142,7 @@ const About = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default About
+export default About;

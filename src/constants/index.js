@@ -357,6 +357,16 @@ export const workExperiences = [
       },
     ],
   },
+  {
+    id: 2,
+    name: "Hami Nepal",
+    pos: "Software Developer",
+    duration: "May 2025 - Sep 2025",
+    title:
+      "Worked on the official Hami Nepal mobile application as an in-house developer, implementing key modules such as volunteer management, project management, and logistics management.",
+    animation: "salute",
+    icon: "/assets/haminepal.png",
+  },
 
   // {
   //   id: 2,

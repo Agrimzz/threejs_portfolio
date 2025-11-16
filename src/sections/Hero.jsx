@@ -1,16 +1,16 @@
-"use client"
-import Button from "@/components/Button"
-import CanvasLoader from "@/components/CanvasLoader"
-import Cube from "@/components/Cube"
-import HeroCamera from "@/components/HeroCamera"
-import ReactLogo from "@/components/ReactLogo"
-import Rings from "@/components/Rings"
-import Setup from "@/components/Setup"
-import Target from "@/components/Target"
-import { calculateSizes } from "@/constants"
-import { Canvas } from "@react-three/fiber"
-import React, { Suspense } from "react"
-import { useMediaQuery } from "react-responsive"
+"use client";
+import Button from "@/components/Button";
+import CanvasLoader from "@/components/CanvasLoader";
+import Cube from "@/components/Cube";
+import HeroCamera from "@/components/HeroCamera";
+import ReactLogo from "@/components/ReactLogo";
+import Rings from "@/components/Rings";
+import Setup from "@/components/Setup";
+import Target from "@/components/Target";
+import { calculateSizes } from "@/constants";
+import { Canvas } from "@react-three/fiber";
+import React, { Suspense } from "react";
+import { useMediaQuery } from "react-responsive";
 
 const Hero = () => {
   //   const x = useControls("Setup", {
@@ -51,11 +51,11 @@ const Hero = () => {
   //     },
   //   })
 
-  const isSmall = useMediaQuery({ maxWidth: 440 })
-  const isMobile = useMediaQuery({ maxWidth: 768 })
-  const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1024 })
+  const isSmall = useMediaQuery({ maxWidth: 440 });
+  const isMobile = useMediaQuery({ maxWidth: 768 });
+  const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1024 });
 
-  const sizes = calculateSizes(isSmall, isMobile, isTablet)
+  const sizes = calculateSizes(isSmall, isMobile, isTablet);
 
   return (
     <section className="min-h-screen w-full flex flex-col relative" id="home">
@@ -64,7 +64,7 @@ const Hero = () => {
           Hi, I am Agrim <span className="waving-hand">👋</span>
         </p>
         <p className="hero_tag text-gray_gradient">
-          Crafting Apps and Websites That Inspire
+          I build Web & App solutions
         </p>
         <div className="w-full h-full absolute inset-0">
           {/* <Leva /> */}
@@ -82,7 +82,7 @@ const Hero = () => {
                 />
               </HeroCamera>
               <group>
-                <Target position={sizes.targetPosition} />
+                {/* <Target position={sizes.targetPosition} /> */}
                 <ReactLogo position={sizes.reactLogoPosition} />
                 <Cube position={sizes.cubePosition} />
                 <Rings position={sizes.ringPosition} />
@@ -103,7 +103,7 @@ const Hero = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

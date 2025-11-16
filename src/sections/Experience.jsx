@@ -1,13 +1,13 @@
-"use client"
-import CanvasLoader from "@/components/CanvasLoader"
-import Developer from "@/components/Developer"
-import { workExperiences } from "@/constants"
-import { OrbitControls } from "@react-three/drei"
-import { Canvas } from "@react-three/fiber"
-import React, { Suspense, useState } from "react"
+"use client";
+import CanvasLoader from "@/components/CanvasLoader";
+import Developer from "@/components/Developer";
+import { workExperiences } from "@/constants";
+import { OrbitControls } from "@react-three/drei";
+import { Canvas } from "@react-three/fiber";
+import React, { Suspense, useState } from "react";
 
 const Experience = () => {
-  const [animationName, setAnimationName] = useState("idle")
+  const [animationName, setAnimationName] = useState("idle");
 
   return (
     <section className="c-space my-20">
@@ -57,7 +57,7 @@ const Experience = () => {
                   >
                     <div className="flex flex-col h-full justify-start items-center py-2">
                       <div className="work-content_logo">
-                        <img src={icon} alt="logo" className="w-full h-full" />
+                        <img src={icon} alt={name} className="w-full h-full" />
                       </div>
                       <div className="work-content_bar"></div>
                     </div>
@@ -101,7 +101,7 @@ const Experience = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Experience
+export default Experience;
